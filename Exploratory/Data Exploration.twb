@@ -1,0 +1,994 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20182.18.0925.2120                               -->
+<workbook original-version='18.1' source-build='2018.2.2 (20182.18.0925.2120)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <SortTagCleanup />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='cleandata' inline='true' name='federated.11itw781j378cy18jmc3j147dmvy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cleandata' name='textscan.0fty7x00unoole1gbnjwo0rsr4ic'>
+            <connection class='textscan' directory='C:/Users/Anderson/Dropbox/Columbia University/Fall 2018/Frameworks and Methods/Assignment/Kaggle Competition/Data Cleaning' filename='cleandata.csv' password='' port='0' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0fty7x00unoole1gbnjwo0rsr4ic' name='cleandata.csv' table='[cleandata#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='integer' name='host_id' ordinal='1' />
+            <column datatype='string' name='room_type' ordinal='2' />
+            <column datatype='string' name='property_type' ordinal='3' />
+            <column datatype='integer' name='accommodates' ordinal='4' />
+            <column datatype='date' name='host_since' ordinal='5' />
+            <column datatype='string' name='host_response_time' ordinal='6' />
+            <column datatype='real' name='bathrooms' ordinal='7' />
+            <column datatype='integer' name='bedrooms' ordinal='8' />
+            <column datatype='integer' name='beds' ordinal='9' />
+            <column datatype='string' name='bed_type' ordinal='10' />
+            <column datatype='integer' name='price' ordinal='11' />
+            <column datatype='string' name='neighbourhood_cleansed' ordinal='12' />
+            <column datatype='string' name='neighbourhood_group_cleansed' ordinal='13' />
+            <column datatype='integer' name='availability_30' ordinal='14' />
+            <column datatype='integer' name='availability_60' ordinal='15' />
+            <column datatype='integer' name='availability_90' ordinal='16' />
+            <column datatype='integer' name='availability_365' ordinal='17' />
+            <column datatype='integer' name='number_of_reviews' ordinal='18' />
+            <column datatype='boolean' name='is_business_travel_ready' ordinal='19' />
+            <column datatype='integer' name='cleaning_fee' ordinal='20' />
+            <column datatype='boolean' name='host_is_superhost' ordinal='21' />
+            <column datatype='integer' name='review_scores_communication' ordinal='22' />
+            <column datatype='real' name='reviews_per_month' ordinal='23' />
+            <column datatype='integer' name='review_scores_rating' ordinal='24' />
+            <column datatype='integer' name='review_scores_accuracy' ordinal='25' />
+            <column datatype='integer' name='review_scores_cleanliness' ordinal='26' />
+            <column datatype='integer' name='review_scores_checkin' ordinal='27' />
+            <column datatype='integer' name='review_scores_location' ordinal='28' />
+            <column datatype='integer' name='review_scores_value' ordinal='29' />
+            <column datatype='integer' name='weekly_price' ordinal='30' />
+            <column datatype='integer' name='monthly_price' ordinal='31' />
+            <column datatype='string' name='calendar_updated' ordinal='32' />
+            <column datatype='integer' name='calculated_host_listings_count' ordinal='33' />
+            <column datatype='boolean' name='require_guest_phone_verification' ordinal='34' />
+            <column datatype='boolean' name='require_guest_profile_picture' ordinal='35' />
+            <column datatype='string' name='cancellation_policy' ordinal='36' />
+            <column datatype='boolean' name='instant_bookable' ordinal='37' />
+            <column datatype='date' name='last_review' ordinal='38' />
+            <column datatype='date' name='first_review' ordinal='39' />
+            <column datatype='integer' name='maximum_nights' ordinal='40' />
+            <column datatype='integer' name='minimum_nights' ordinal='41' />
+            <column datatype='integer' name='extra_people' ordinal='42' />
+            <column datatype='integer' name='guests_included' ordinal='43' />
+            <column datatype='real' name='latitude' ordinal='44' />
+            <column datatype='real' name='longitude' ordinal='45' />
+            <column datatype='integer' name='zipcode_Rank' ordinal='46' />
+            <column datatype='integer' name='review_scores_sum' ordinal='47' />
+            <column datatype='integer' name='days_since_review' ordinal='48' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[host_id]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>host_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>room_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[room_type]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>room_type</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>property_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[property_type]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>property_type</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>accommodates</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[accommodates]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>accommodates</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_since</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[host_since]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>host_since</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_response_time</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[host_response_time]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>host_response_time</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bathrooms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bathrooms]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>bathrooms</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bedrooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bedrooms]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>bedrooms</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>beds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[beds]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>beds</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bed_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[bed_type]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>bed_type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood_cleansed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood_cleansed]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>neighbourhood_cleansed</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>neighbourhood_group_cleansed</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[neighbourhood_group_cleansed]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>neighbourhood_group_cleansed</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>availability_30</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[availability_30]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>availability_30</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>availability_60</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[availability_60]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>availability_60</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>availability_90</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[availability_90]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>availability_90</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>availability_365</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[availability_365]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>availability_365</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>number_of_reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[number_of_reviews]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>number_of_reviews</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>is_business_travel_ready</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[is_business_travel_ready]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>is_business_travel_ready</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cleaning_fee</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[cleaning_fee]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>cleaning_fee</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>host_is_superhost</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[host_is_superhost]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>host_is_superhost</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_communication</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_scores_communication]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>review_scores_communication</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>reviews_per_month</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[reviews_per_month]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>reviews_per_month</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_rating</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_scores_rating]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>review_scores_rating</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_accuracy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_scores_accuracy]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>review_scores_accuracy</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_cleanliness</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_scores_cleanliness]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>review_scores_cleanliness</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_checkin</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_scores_checkin]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>review_scores_checkin</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_location</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_scores_location]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>review_scores_location</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_value</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_scores_value]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>review_scores_value</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weekly_price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weekly_price]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>weekly_price</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>monthly_price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[monthly_price]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>monthly_price</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_updated</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[calendar_updated]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>calendar_updated</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calculated_host_listings_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calculated_host_listings_count]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>calculated_host_listings_count</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>require_guest_phone_verification</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[require_guest_phone_verification]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>require_guest_phone_verification</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>require_guest_profile_picture</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[require_guest_profile_picture]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>require_guest_profile_picture</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cancellation_policy</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cancellation_policy]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>cancellation_policy</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>instant_bookable</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[instant_bookable]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>instant_bookable</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_review</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[last_review]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>last_review</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_review</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[first_review]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>first_review</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>maximum_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[maximum_nights]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>maximum_nights</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minimum_nights</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[minimum_nights]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>minimum_nights</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extra_people</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[extra_people]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>extra_people</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>guests_included</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[guests_included]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>guests_included</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>zipcode_Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[zipcode_Rank]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>zipcode_Rank</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>review_scores_sum</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[review_scores_sum]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>review_scores_sum</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>days_since_review</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[days_since_review]</local-name>
+            <parent-name>[cleandata.csv]</parent-name>
+            <remote-alias>days_since_review</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Accommodates' datatype='integer' name='[accommodates]' role='measure' type='quantitative' />
+      <column caption='Availability 30' datatype='integer' name='[availability_30]' role='measure' type='quantitative' />
+      <column caption='Availability 365' datatype='integer' name='[availability_365]' role='measure' type='quantitative' />
+      <column caption='Availability 60' datatype='integer' name='[availability_60]' role='measure' type='quantitative' />
+      <column caption='Availability 90' datatype='integer' name='[availability_90]' role='measure' type='quantitative' />
+      <column caption='Bathrooms' datatype='real' name='[bathrooms]' role='measure' type='quantitative' />
+      <column caption='Bed Type' datatype='string' name='[bed_type]' role='dimension' type='nominal' />
+      <column caption='Bedrooms' datatype='integer' name='[bedrooms]' role='measure' type='quantitative' />
+      <column caption='Beds' datatype='integer' name='[beds]' role='measure' type='quantitative' />
+      <column caption='Calculated Host Listings Count' datatype='integer' name='[calculated_host_listings_count]' role='measure' type='quantitative' />
+      <column caption='Cancellation Policy' datatype='string' name='[cancellation_policy]' role='dimension' type='nominal' />
+      <column caption='Cleaning Fee' datatype='integer' name='[cleaning_fee]' role='measure' type='quantitative' />
+      <column caption='Extra People' datatype='integer' name='[extra_people]' role='measure' type='quantitative' />
+      <column caption='Guests Included' datatype='integer' name='[guests_included]' role='measure' type='quantitative' />
+      <column caption='Host Identity Verified' datatype='boolean' name='[host_identity_verified]' role='dimension' type='nominal' />
+      <column caption='Host Is Superhost' datatype='boolean' name='[host_is_superhost]' role='dimension' type='nominal' />
+      <column caption='Host Listings Count' datatype='integer' name='[host_listings_count]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Instant Bookable' datatype='boolean' name='[instant_bookable]' role='dimension' type='nominal' />
+      <column caption='Is Business Travel Ready' datatype='boolean' name='[is_business_travel_ready]' role='dimension' type='nominal' />
+      <column caption='Last Review' datatype='date' name='[last_review]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Maximum Nights' datatype='integer' name='[maximum_nights]' role='measure' type='quantitative' />
+      <column caption='Minimum Nights' datatype='integer' name='[minimum_nights]' role='measure' type='quantitative' />
+      <column caption='Monthly Price' datatype='integer' name='[monthly_price]' role='measure' type='quantitative' />
+      <column caption='Neighbourhood Cleansed' datatype='string' name='[neighbourhood_cleansed]' role='dimension' type='nominal' />
+      <column caption='Neighbourhood Group Cleansed' datatype='string' name='[neighbourhood_group_cleansed]' role='dimension' type='nominal' />
+      <column caption='Number Of Reviews' datatype='integer' name='[number_of_reviews]' role='measure' type='quantitative' />
+      <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+      <column caption='Property Type' datatype='string' name='[property_type]' role='dimension' type='nominal' />
+      <column caption='Review Scores Accuracy' datatype='integer' name='[review_scores_accuracy]' role='measure' type='quantitative' />
+      <column caption='Review Scores Checkin' datatype='integer' name='[review_scores_checkin]' role='measure' type='quantitative' />
+      <column caption='Review Scores Cleanliness' datatype='integer' name='[review_scores_cleanliness]' role='measure' type='quantitative' />
+      <column caption='Review Scores Communication' datatype='integer' name='[review_scores_communication]' role='measure' type='quantitative' />
+      <column caption='Review Scores Location' datatype='integer' name='[review_scores_location]' role='measure' type='quantitative' />
+      <column caption='Review Scores Rating' datatype='integer' name='[review_scores_rating]' role='measure' type='quantitative' />
+      <column caption='Review Scores Value' datatype='integer' name='[review_scores_value]' role='measure' type='quantitative' />
+      <column caption='Reviews Per Month' datatype='real' name='[reviews_per_month]' role='dimension' type='quantitative' />
+      <column caption='Room Type' datatype='string' name='[room_type]' role='dimension' type='nominal' />
+      <column caption='Security Deposit' datatype='integer' name='[security_deposit]' role='measure' type='quantitative' />
+      <column caption='Square Feet' datatype='string' name='[square_feet]' role='dimension' type='nominal' />
+      <column caption='Weekly Price' datatype='integer' name='[weekly_price]' role='measure' type='quantitative' />
+      <column datatype='integer' default-format='*00000' name='[zipcode_Rank]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <column-instance column='[is_business_travel_ready]' derivation='None' name='[none:is_business_travel_ready:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.636145' measure-ordering='alphabetic' measure-percentage='0.363855' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:is_business_travel_ready:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>false</bucket>
+            </map>
+            <map to='#55aaff'>
+              <bucket>true</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Business Travel Ready Ready ' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Is Business Travel Ready' />
+        <param name='target' value='Business Travel Ready Ready ' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Business Travel Ready Ready '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Neighborhoods Grouped by Business Travel Readiness&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cleandata' name='federated.11itw781j378cy18jmc3j147dmvy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.11itw781j378cy18jmc3j147dmvy'>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:vtnone:qk]' pivot='key' type='quantitative' visual-totals='None' />
+            <column caption='Is Business Travel Ready' datatype='boolean' name='[is_business_travel_ready]' role='dimension' type='nominal' />
+            <column caption='Neighbourhood Group Cleansed' datatype='string' name='[neighbourhood_group_cleansed]' role='dimension' type='nominal' />
+            <column-instance column='[is_business_travel_ready]' derivation='None' name='[none:is_business_travel_ready:nk]' pivot='key' type='nominal' />
+            <column-instance column='[neighbourhood_group_cleansed]' derivation='None' name='[none:neighbourhood_group_cleansed:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='integer' name='[price]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.11itw781j378cy18jmc3j147dmvy].[none:neighbourhood_group_cleansed:nk]' direction='ASC' using='[federated.11itw781j378cy18jmc3j147dmvy].[avg:price:vtnone:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='field-labels-spanner'>
+            <format attr='separator' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.11itw781j378cy18jmc3j147dmvy].[none:is_business_travel_ready:nk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.11itw781j378cy18jmc3j147dmvy].[none:is_business_travel_ready:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.11itw781j378cy18jmc3j147dmvy].[avg:price:vtnone:qk]' enable-instant-analytics='true' fill-above='false' fill-below='false' formula='quantiles' id='refline2' label-type='none' scope='per-pane' symmetric='true' tile-count='4' value-column='[federated.11itw781j378cy18jmc3j147dmvy].[avg:price:vtnone:qk]' z-order='1' />
+            <reference-line axis-column='[federated.11itw781j378cy18jmc3j147dmvy].[avg:price:vtnone:qk]' enable-instant-analytics='true' formula='median' id='refline3' label-type='automatic' probability='95' scope='per-pane' value-column='[federated.11itw781j378cy18jmc3j147dmvy].[avg:price:vtnone:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.6151933670043945' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.11itw781j378cy18jmc3j147dmvy].[avg:price:vtnone:qk]</rows>
+        <cols>([federated.11itw781j378cy18jmc3j147dmvy].[none:is_business_travel_ready:nk] / [federated.11itw781j378cy18jmc3j147dmvy].[none:neighbourhood_group_cleansed:nk])</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows film-mode='true' source-height='30'>
+    <window class='worksheet' maximized='true' name='Business Travel Ready Ready '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='279'>
+            <card pane-specification-id='1' param='[federated.11itw781j378cy18jmc3j147dmvy].[none:is_business_travel_ready:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.11itw781j378cy18jmc3j147dmvy].[none:is_business_travel_ready:nk]</field>
+            <field>[federated.11itw781j378cy18jmc3j147dmvy].[none:neighbourhood_group_cleansed:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Business Travel Ready Ready ' width='192'>
+      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
+      xB+QQUdTAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
