@@ -56,9 +56,9 @@ Throughout the kaggle competition, I submitted multiple models including linear 
 I also tried to test all the parameters in a tuning grid and discovered that the time to complete this model was expensive which led me to isolate one parameter and test a range of predictors and use the best tune for my next independent tuning. My final tuning parameters had a best tune from all the previous models. 
 The final tuning parameter for my model were: ntrees: 6200, max_depth = 6, subsample = 0.5, eta= 0.1
 What I would do differently. 
-1)	Be more organized: Towards the end of the competition, I had multiple version of my models, and it became increasingly more difficult to keep track different version of my models. Also It would have helped if I had taken notes on the methods I attempted and recorded the result. 
-2)	Try different types of models: Certain models have limitations I reached a point where each tuning improved the model performance by a marginal amount. The caret package has a variety of models that are available, I reached a point of diminishing returns for especially one method (extreme Gradient Boosting) and I should have examined another idea. 
-3)	Look at more packages: There are numerous packages such as h20, zip code, etc that could have an impact on my model. Those packages streamline the process of transforming variable, work with text, longitude, and latitude. 
-4)	Explore amenities: I didn’t extract any insight from the amenities columns, but after observing some of the presentations, I realized that there was a lot of insight that could be extracted from that column.
-5)	Combine different models: Model prediction could have significantly improved by combing the results of my previous models. 
+1)	**Be more organized:** Towards the end of the competition, I had multiple version of my models, and it became increasingly more difficult to keep track different version of my models. Also It would have helped if I had taken notes on the methods I attempted and recorded the result. 
+2)	**Try different types of models:** Certain models have limitations I reached a point where each tuning improved the model performance by a marginal amount. The caret package has a variety of models that are available, I reached a point of diminishing returns for especially one method (extreme Gradient Boosting) and I should have examined another idea. 
+3)	**Look at more packages:** There are numerous packages such as h20, zip code, etc that could have an impact on my model. Those packages streamline the process of transforming variable, work with text, longitude, and latitude. 
+4)	**Explore amenities:** I didn’t extract any insight from the amenities columns, but after observing some of the presentations, I realized that there was a lot of insight that could be extracted from that column.
+5)	**Combine different models:** Model prediction could have significantly improved by combing the results of my previous models. 
 
