@@ -40,8 +40,8 @@ The below illustrate the distribution of the price column; an interesting observ
 2)    **Parameter Tuning:** Not all parameter are created equal, some have a higher impact on the prediction than other. Focusing on those parameters that have a higher impact can drastically change the results. 
 3)    Be careful with predicting by using a prediction:  I used predicted variables, weekly price, and monthly price, in my prediction, and while it was significant, I was able to get a better with the same model with it removed. 
 4)    **Use Google Cloud:** Google cloud enables you to set up a virtual machine in the cloud, and install software such as R. The advantage is that you can run multiple models and compute models overnight and while your laptop is turned off.
-5)     **Overfitting:** Certain algorithms, such as boosting, can overfit the data. One of my boosting models had an RMSE of 0.7 and above 60 in my test set. 
-6)    **Cross Validations:**  The RMSE for a model that used cross-validation performed significantly better than models that didn't use cross-validation, however, there is a drawback, it is computationally expensive to perform. 
+5)    **Cross Validations:**  The RMSE for a model that used cross-validation performed significantly better than models that didn't use cross-validation, however, there is a drawback, it is computationally expensive to perform. 
+6)    **Overfitting**: Certain algorithms, such as boosting fall victim to overfittin.
 
 #### Best Model 
 Throughout the Kaggle competition, I submitted multiple models, including linear regression, lasso, ridge, decision trees, random forest,  Gradient Boosting, Ada Boost, and Gradient Boost models. The model that produced the best result was extreme Gradient Boosting.
