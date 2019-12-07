@@ -37,15 +37,10 @@ The below illustrate the distribution of the price column; an interesting observ
  
 #### Key Lesson Learned
 1)    **Train time:** The caret package allows you to test multiple variables via grid search. I tested~100,000 different combinations, and after about 8 hours, the models were still computing. To compute many variables are computationally expensive. In my best model, I tested multiple variables for one feature and utilized the best tune to examine the following variables. 
-
 2)    **Parameter Tuning:** Not all parameter are created equal, some have a higher impact on the prediction than other. Focusing on those parameters that have a higher impact can drastically change the results. 
-
 3)    Be careful with predicting by using a prediction:  I used predicted variables, weekly price, and monthly price, in my prediction, and while it was significant, I was able to get a better with the same model with it removed. 
-
 4)    **Use Google Cloud:** Google cloud enables you to set up a virtual machine in the cloud, and install software such as R. The advantage is that you can run multiple models and compute models overnight and while your laptop is turned off.
-
 5)     **Overfitting:** Certain algorithms, such as boosting, can overfit the data. One of my boosting models had an RMSE of 0.7 and above 60 in my test set. 
-
 6)    **Cross Validations:**  The RMSE for a model that used cross-validation performed significantly better than models that didn't use cross-validation, however, there is a drawback, it is computationally expensive to perform. 
 
 #### Best Model 
@@ -58,7 +53,7 @@ What I would do differently.
 
 2)    **Try different types of models:** Certain models have limitations I reached a point where each tuning improved the model performance by a marginal amount. I reached a point of diminishing returns for especially one method (Extreme Gradient Boosting), and I should have examined another idea. 
 
-3)    **Look at more packages:** There are numerous packages such as h20, zip code, etc. that could have an impact on my model. Those packages streamline the process of transforming variables, work with text, longitude, and latitude. 
+3)    **Explore more packages:** There are numerous packages such as h20, zip code, etc. that could have an impact on my model. Those packages streamline the process of transforming variables, work with text, longitude, and latitude. 
 
 4)    **Feature Engineering:** I didn't extract any insight from the amenities columns, but after observing some of the presentations, I realized that there was a lot of insight that could be derived from that column.
 
