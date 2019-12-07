@@ -44,7 +44,7 @@ The below illustrate the distribution of the price column; an interesting observ
 
 4)    **Use Google Cloud:** Google cloud enables you to set up a virtual machine in the cloud, and install software such as R. The advantage is that you can run multiple models and compute models overnight and while your laptop is turned off.
 
-5)     Overfitting: Certain algorithms, such as boosting, can overfit the data. One of my boosting models had an RMSE of 0.7 and above 60 in my test set. 
+5)     **Overfitting:** Certain algorithms, such as boosting, can overfit the data. One of my boosting models had an RMSE of 0.7 and above 60 in my test set. 
 
 6)    **Cross Validations:**  The RMSE for a model that used cross-validation performed significantly better than models that didn't use cross-validation, however, there is a drawback, it is computationally expensive to perform. 
 
